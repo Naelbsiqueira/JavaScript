@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo do Troco</title>
+    <style>
+        button{
+            font-size: 1.4em;
+            width: 200px;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando o Troco</h1>
+    <button onclick="calcular()">Comprar produto</button>
+    <script>
+        function calcular(){
+            var int = prompt('Que produto você está comprando ?');
+            var val =Number(prompt(`Quanto custa o ${int} que você está comprando?`));
+            var pag =Number(prompt(`Qual foi o valor que você deu para pagar ${int}?`));
+            var sob = pag-val;
+            alert (`Você comprou um ${int} que custa R$${val.toFixed(2).replace('.',',')}.\nDeu R$${pag.toFixed(2).replace('.',',')} em dinheiro e recebeu R$${sob.toFixed(2).replace('.',',')} de troco.`);
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes e Depois</title>
+</head>
+<body>
+    <h1>Antes e Depois</h1>
+    <button onclick="clicar()">Antecessor e Sucessor</button>
+    <script>
+            
+        function clicar(){
+            var num = prompt('Digite um número qualquer:')
+            var s = Number((num));
+            var a = Number((num));         
+            alert(`O número digitado foi ${num}\nO seu sucessor é ${s+=18}\nSeu antecessor é ${a-=1}`)
+        }
+
+    </script>
+    
+</body>
+</html>

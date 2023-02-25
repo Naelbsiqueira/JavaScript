@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste Salarial</title>
+</head>
+<body>
+    <h1>Reajuste Salarial</h1>
+    <p><button onclick="reajustar()">Reajustar Salário</button></p> 
+    <p>Clique no botão acima para inciar !</p>
+    <div id="res"></div>
+    <script>
+        function reajustar(){
+            var fun = prompt("Qual é o nome do funcionário ?")
+            var sal = Number(prompt(`Qual o salário de ${fun} ?`))
+            var por = Number(prompt(`O salario de ${fun} vai ser reajustado em qual porcentagem ?`))
+            var aum = Number(sal*por/100)
+            var rea = Number(sal+(sal*por/100))
+            res.innerHTML = `<h2>${fun} recebeu um ajuste salarial!</h2><p>O salário atual era de ${sal.toLocaleString()}R$.</p><p>Com o aumento de ${por}%, o salário vai aumentar R$${aum.toFixed(2).toLocaleString()} no próximo mês.</p><p>E a partir dái, ${fun} vai passar a recerber ${rea.toLocaleString()}R$.</p>`
+
+
+
+
+        }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

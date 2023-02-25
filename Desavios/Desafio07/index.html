@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor R$ ->US$</title>
+
+
+</head>
+<body>
+    
+     <h1>Conversor R$ --> US$ </h1>
+        <button onclick="converter()"> Converter</button>
+        <p>Clique no botão acime para iniciar.</p>
+        <div id="res"></div>
+    <script>    
+        var da = Number(prompt('Antes de mais nada. Quanto está a cotação do dolár agora ?')) 
+        function converter(){
+        var valor = Number(prompt('Quanto R$ você tem na carteira ?'))
+        res.innerHTML = `<h2> O valor atual do dólar é ${da.toFixed(2).replace('.',',')}US$</h2><p>Você tem ${valor.toFixed(2).replace('.',',')}R$.</p><p>Equivalente a ${(valor/da).toFixed(2).replace('.',',')}US$</p>`
+        }
+    </script>
+    
+</body>
+</html>
